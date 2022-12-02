@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Enquete</display-name>
+  
+  <servlet>
+  	<servlet-name>AddressControl</servlet-name>
+  	<servlet-class>controller.AddressController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddressControl</servlet-name>
+  	<url-pattern>/AddressListAction.do</url-pattern>
+  	<url-pattern>/AddressCreateAction.do</url-pattern>
+  	<url-pattern>/AddressViewAction.do</url-pattern>
+  	<url-pattern>/AddressUpdateForm.do</url-pattern>
+  	<url-pattern>/AddressUpdateAction.do</url-pattern>
+  	<url-pattern>/AddressDeleteAction.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LogonControl</servlet-name>
+  	<servlet-class>controller.LogonController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LogonControl</servlet-name>
+  	<url-pattern>/AddressLoginAction.do</url-pattern>
+  	<url-pattern>/EnqueteLoginAction.do</url-pattern>
+  	<url-pattern>/UserLoginAction.do</url-pattern>
+  	<url-pattern>/LogoutAction.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EnqueteControl</servlet-name>
+  	<servlet-class>controller.EnqueteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EnqueteControl</servlet-name>
+  	<url-pattern>/EnqueteGroupListAction.do</url-pattern>
+  	<url-pattern>/EnqueteGroupCreateAction.do</url-pattern>
+  	<url-pattern>/EnqueteGroupViewAction.do</url-pattern>
+  	<url-pattern>/EnqueteGroupUpdateForm.do</url-pattern>
+  	<url-pattern>/EnqueteGroupUpdateAction.do</url-pattern>
+  	<url-pattern>/EnqueteGroupDeleteAction.do</url-pattern>
+  	<url-pattern>/EnqueteListAction.do</url-pattern>
+  	<url-pattern>/EnqueteCreateAction.do</url-pattern>
+  	<url-pattern>/EnqueteViewAction.do</url-pattern>
+  	<url-pattern>/EnqueteUpdateForm.do</url-pattern>
+  	<url-pattern>/EnqueteUpdateAction.do</url-pattern>
+  	<url-pattern>/EnqueteDeleteAction.do</url-pattern>
+  	<url-pattern>/EnqueteSummaryAction.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AnswerControl</servlet-name>
+  	<servlet-class>controller.AnswerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AnswerControl</servlet-name>
+  	<url-pattern>/EnqueteAnswerForm.do</url-pattern>
+  	<url-pattern>/EnqueteAnswerAction.do</url-pattern>
+  </servlet-mapping>
+</web-app>
